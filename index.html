@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>АрсмарисГрупп</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/694/694076.png ">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-WGW1sPu3/P/2cakmMDI9Nv+niu7yqqYtLNoMZtWR5lOq3tB2pn7nBM+MfT4aQ5Pdzf9h8PL8+jJbHsqZfSTJWg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <input class="checkbox" type="checkbox" name="hamburger" id="hamburger" />
+    <label for="hamburger" class="menu-hamburger">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+    </label>
+
+    <div class="header-top">
+        <a href="#home" class="link logo block-center">АрсмарисГрупп</a>
+
+        <nav class="navigation">
+            <ul class="menu block-center">                
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#products">Товары</a>
+                </li>
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#certificate">Сертификаты</a>
+                </li>
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#about-company">О&nbsp;компании</a>
+                </li>
+                <li class="menu-element block-center">
+                    <a class="link menu-element__link" href="#contacts">Контакты</a>
+                </li>
+                <li class="menu-element block-center">
+                  <div>
+                    <a class="link menu-element__link" href="tel:80296555540">+375(29)6555540<br></a>
+                    <a class="link menu-element__link" href="mailto:snk-007@yandex.by">snk-007@yandex.by</a>
+                  </div>                  
+                </li > 
+                <li class="menu-element block-center">
+                  <a class="link menu-element__link text__fyl">Работаем как с юридическими лицами,<br> так и с физическими лицами</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="header section-grey  observer-section" id="home">
+        <img class="header__background" src="images/photos/photo-1557064262-6acc904bffbd.png" alt="background" />
+        <div class="header__background-wrapper"></div>
+
+        <div class="header-center">
+            <div class="header-center__wrapper">
+                <h1 class="name">АрсмарисГрупп</h1>
+                <p class="description">Смазочно-охлаждающие жидкости в Беларуси!</p>
+            </div>
+        </div>
+    </header>    
+
+    <section class="about-me" id="products">
+      <h2 class="second-title">Товары </h2>
+      <h2 class="products__description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ООО «АрсмарисГрупп» специализируется на продаже высококачественных СОЖ и Эмульгаторов, которые являются неотъемлемой частью процесса металлообработки.</h2>
+      <h2 class="products__description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Смазочно-охлаждающие жидкости (СОЖ) — это многокомпонентные составы, предназначенные, в основном, для смазки и охлаждения инструментов и деталей при различных операциях обработки и формовки. Использование СОЖ позволяет снижать температуру в зоне обработки до приемлемой за счёт теплообмена и, достаточно часто, за счёт парообразования. Наличие у СОЖ смазывающих свойств снижает трение в зоне обработки, фрикционный износ инструмента, значительно снижает вероятность задира и повреждения поверхностей обрабатываемых деталей и инструмента.</h2>
+      <h2 class="products__description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Наша компания предлагает Смазочно-охлаждающие жидкости (СОЖ) <a class="argunitPX" onclick="toggleAdditionalInfo(6)" href="#heading-6">"АРГУНИТ РХ"</a>, подходящие для различных видов обработки металлов и требований производства.</h2>
+      <div class="row">
+        <div class="left">
+          <div class="products-list">
+            <div class="products">
+              <h2 onclick="toggleAdditionalInfo(6)" id="heading-6">Смазочно-охлаждающие жидкости «Аргунит РХ»<span class="arrow"></span></h2>
+            </div>
+            <div class="additional-info" id="additional-info-6">
+              <h2 class="products__about"><span id="argunitPX_info" class="products__about__end">Смазочно-охлаждающие жидкости «Аргунит РХ»:</span><br> 
+                Выпускаются по ТУ 20.59.41-010-22297561-2018.<br>
+                Предназначены для снижения трения при обработке металлов резанием и давлением, уменьшения износа и охлаждения режущего инструмента, облегчения процесса деформирования срезаемого слоя металла, улучшения качества обрабатываемых поверхностей, удаления (смывания) металлической стружки и предотвращения коррозии вновь обработанных поверхностей.
+                <br>СОЖ Аргунит РХ изготавливают четырех марок: синтетические охлаждающие жидкости - «СОЖ Аргунит РХ-С» и «СОЖ Аргунит РХ-СМ», полусинтетическая охлаждающая жидкость - «СОЖ Аргунит РХ-ПС», минеральная охлаждающая жидкость - «СОЖ Аргунит РХ-М».
+                </h2>
+                <h2 class="priemushch">Смазочно-охлаждающие жидкости «СОЖ Аргунит РХ» обеспечивают:</h2>
+                <ul class="priemushch__spisok">
+                  <li>Охлаждение режущего инструмента, нагревающегося при работе, и увеличение его срока службы;</li>
+                  <li>Повышение качества обработки поверхности металла;</li>
+                  <li>Удаление с рабочих поверхностей пыли, грязи, металлической стружки и т. д.;</li>
+                  <li>Смазывание зоны трения для повышения ресурса резцов;</li>
+                  <li>Снижение коэффициента трения и выделение теплоты;</li>
+                  <li>Повышение производительности станка за счет увеличения скорости;</li>
+                  <li>Улучшение качества и точности обработки.</li>
+                </ul>
+                <h2 class="products__about"> «СОЖ Аргунит РХ» могут применяться для широкого спектра материалов: углеродистая и нержавеющая сталь, литьевой чугун, бронза, латунь, алюминиевые и магнезиальные сплавы, высокопрочные и инструментальные стали, сплавы никеля и титана. Обладают непревзойдёнными охлаждающими свойствами, что особенно важно при высокоскоростной металлообработке.</h2>
+                <h2 class="priemushch">На изготовляемую продукцию имеется вся необходимая разрешительная документация:</h2>
+                <ul class="priemushch__spisok">
+                  <li>Сертификат соответствия ГОСТ Р;</li>
+                  <li>Паспорт безопасности химической продукции;</li>
+                  <li>Свидетельство о государственной регистрации соответствия Единым санитарно-эпидемиологическим требованиям;</li>
+                </ul>
+                <h2 class="products__about__end">Наша продукция производится из отечественного сырья, на отечественном оборудовании на основе отечественных разработок, не имеющих аналогов в мировой практике. Качество входного сырья и продукции завода контролируется собственной аттестованной лабораторией.</h2>
+            </div>
+            <div class="products">
+              <h2 onclick="toggleAdditionalInfo(7)" id="heading-7">Алгоритм выбора СОЖ Аргунит РХ<span class="arrow"></span></h2>
+            </div>
+            <div class="additional-info left_table" id="additional-info-7">
+              <h2 class="algoritm__wybor">Таблица носит рекомендательный характер. Для каждой операции необходимо производить подбор марки СОЖ опытным путем!</h2>
+              <table border="1">
+                <thead>
+                  <tr>
+                    <th>
+                      <div class="material">МАТЕРИАЛЫ</div>
+                      <span class="rotate">ОПЕРАЦИИ</span>
+                    </th>                   
+                    <th>Магниевые сплавы</th>
+                    <th>Алюминий. Алюминиевые сплавы. Бронза. Медь. Желтые металлы</th>
+                    <th>Ковкий чугун. Графитный чугун</th>
+                    <th>Низкоуглеродистые стали. Строительные стали. Тверд. до 200 В</th>
+                    <th>Среднеуглеродистые стали и сплавы. Нержавеющие стали. Сплавы никеля. Серый чугун. Тверд. 200-300В</th>
+                    <th>Высокоуглеродистые стали и сплавы. Жаропрочные стали. Сплавы никеля. Инструментальные стали. Сплавы титана. Тверд. свыше 300 В</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Точение</td>
+                    <td>ПС, С</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                  </tr>
+                  <tr>
+                    <td>Растачивание</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                  </tr>
+                  <tr>
+                    <td>Сверление</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                  </tr>
+                  <tr>
+                    <td>Сверление эжекторное</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>**</td>
+                  </tr>
+                  <tr>
+                    <td>Долбление</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                  </tr>
+                  <tr>
+                    <td>Фрезерование</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                  </tr>
+                  <tr>
+                    <td>Резьбонарезание метчиком</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                  </tr>
+                  <tr>
+                    <td>Накатывание резьбы</td>
+                    <td>*</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                    <td>**</td>
+                  </tr>
+                  <tr>
+                    <td>Нарезание резьбы</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                  </tr>
+                  <tr>
+                    <td>Станки-автоматы</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                  </tr>
+                  <tr>
+                    <td>Многошпиндельные станки</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                  </tr>
+                  <tr>
+                    <td>Строгание</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                  </tr>
+                  <tr>
+                    <td>Зенкование</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                  </tr>
+                  <tr>
+                    <td>Распиливание</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                  </tr>
+                  <tr>
+                    <td>Протягивание внутреннее</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                    <td>**</td>
+                    <td>**</td>
+                  </tr>
+                  <tr>
+                    <td>Протягивание наружное</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>**</td>
+                    <td>**</td>
+                  </tr>
+                  <tr>
+                    <td>Шлифование бесцентровое</td>
+                    <td>*</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                  </tr>
+                  <tr>
+                    <td>Шлифование с ползучей подачей</td>
+                    <td>*</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                  </tr>
+                  <tr>
+                    <td>Шлифование круглое</td>
+                    <td>*</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, СМ, М</td>
+                    <td>ПС, С, СМ</td>
+                  </tr>
+                  <tr>
+                    <td>Шлифование плоское</td>
+                    <td>*</td>
+                    <td>ПС, С, СМ</td>
+                    <td>С, СМ, ПС</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС , С, СМ</td>
+                    <td>ПС, С, СМ</td>
+                  </tr>
+                  <tr>
+                    <td>Шлифование контурное</td>
+                    <td>*</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, СМ</td>
+                    <td>ПС, С, М</td>
+                    <td>ПС, С, М</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2 class="rashifrofka">Расшифровка:</h2>
+              <div class="rashifrofka__info">
+                <div class="about-me__extra-content">
+                  <span class="about-me__extra-title bold">ПС:</span>
+                  <span class="about-me__extra-description">СОЖ Аргунит РХ-ПС</span>
+                </div>
+                <div class="about-me__extra-content">
+                  <span class="about-me__extra-title bold">СМ:</span>
+                  <span class="about-me__extra-description">СОЖ Аргунит РХ-СМ</span>
+                </div>
+                <div class="about-me__extra-content">
+                  <span class="about-me__extra-title bold">С:</span>
+                  <span class="about-me__extra-description">СОЖ Аргунит РХ-С</span>
+                </div>
+                <div class="about-me__extra-content">
+                  <span class="about-me__extra-title bold">М:</span>
+                  <span class="about-me__extra-description">СОЖ Аргунит РХ-М</span>
+                </div>
+                <div class="about-me__extra-content">
+                  <span class="about-me__extra-title bold">*</span>
+                  <span class="about-me__extra-description">Нет операций</span>
+                </div>
+                <div class="about-me__extra-content">
+                  <span class="about-me__extra-title bold">**</span>
+                  <span class="about-me__extra-description">Применяется масляная СОЖ или СОЖ Аргунит РХ-М концентрат</span>
+                </div>
+                <div class="about-me__extra-content">
+                  <span class="about-me__extra-title bold">***</span>
+                  <span class="about-me__extra-description">Возможно использование вместо марки РХ-С – марка РХ-СМ (для улучшения моющих и охлаждающих характеристик СОЖ).</span>
+                </div>
+              
+              </div>
+            </div>            
+          </div>
+        </div>
+        <div class="right">
+          <div class="products-list">
+            <div class="products">
+              <h2 onclick="toggleAdditionalInfo(1)" id="heading-1">СОЖ Аргунит РХ-С <span class="arrow"></span></h2>
+            </div>
+            <div class="additional-info" id="additional-info-1">
+              <h2 class="products__description">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Является синтетическим СОЖ. Не содержит минеральных масел, растворителей, хлора, нитритов, фенолов и формальдегида, что обеспечивает выполнение предприятием законодательных требований по защите окружающей среды. Обладает хорошими смазывающими свойствами. Применяют для получения смазочно-охлаждающих жидкостей на водной основе, используемых при обработке металлов: точение, сверление, долбение, фрезерование, резьбонарезание, шлифование, строгание, зенкование, протягивание.</h2>
+            </div>
+            <div class="products">
+              <h2 onclick="toggleAdditionalInfo(2)" id="heading-2">СОЖ Аргунит РХ-СМ <span class="arrow"></span></h2>
+            </div>
+            <div class="additional-info" id="additional-info-2">
+              <p>Additional information about Product 2.</p>
+            </div>
+            <div class="products">
+              <h2 onclick="toggleAdditionalInfo(3)" id="heading-3">СОЖ Аргунит РХ-ПС <span class="arrow"></span></h2>
+            </div>
+            <div class="additional-info" id="additional-info-3">
+              <p>Additional information about Product 3.</p>
+            </div>
+            <div class="products">
+              <h2 onclick="toggleAdditionalInfo(4)" id="heading-4">СОЖ Аргунит РХ-М <span class="arrow"></span></h2>
+            </div>
+            <div class="additional-info" id="additional-info-4">
+              <p>Additional information about Product 4.</p>
+            </div>
+            <div class="products">
+              <h2 onclick="toggleAdditionalInfo(5)" id="heading-5">Эмульгатор АРГУНИТ РХ-К М6 <span class="arrow"></span></h2>
+            </div>   
+            <div class="additional-info" id="additional-info-5">
+              <p>Additional information about Product 5.</p>
+              <div class="asdasd">asdasdasdadasd</div>
+            </div>   
+          </div>
+        </div>
+      </div>
+      
+  </section>
+
+    <section class="achievements section-grey block-center observer-section" id="certificate">
+        <h2 class="second-title">Сертификаты</h2>
+
+        <div class="achievements-list slider">
+            <input class="slider__input" type="radio" name="slider_achievements" id="slider-achievements-1" checked />
+            <input class="slider__input" type="radio" name="slider_achievements" id="slider-achievements-2" />
+
+            <div class="achievements-list__view slider__wrapper">
+                <a href="images/photos/ГОСТ Р СОЖ 2021.pdf" target="_blank" class="achievements-list__element slider__link  block-center direction">
+                    <img
+                        class="achievements-list__image slider__image"
+                        src="images/photos/ГОСТ Р СОЖ 2021-1.png"
+                        alt="Certificate"
+                    />Сертификат соответствия
+                </a>
+                <a href="images/photos/Отказное решение СОЖ 2021.pdf" target="_blank" class="achievements-list__element slider__link  block-center direction">
+                    <img class="achievements-list__image slider__image" src="images/photos/Отказное решение СОЖ 2021-1.png" alt="Certificate">Информационное письмо
+                </a>
+                <a href="images/photos/Протокол испытаний СОЖ 2021.pdf" target="_blank" class="achievements-list__element slider__link  block-center direction">
+                    <img class="achievements-list__image slider__image" src="images/photos/Протокол испытаний СОЖ 2021-1.png" alt="Certificate">Протокол испытаний
+                </a>
+            </div>
+            <div class="achievements-list__view slider__wrapper">
+                <a href="images/photos/СГР СОЖ.pdf" target="_blank" class="achievements-list__element slider__link  block-center direction">
+                    <img class="achievements-list__image slider__image" src="images/photos/СГР СОЖ-1.png" alt="Certificate">Свидетельство о государственной регистрации
+                </a>
+                <a href="images/photos/ТУ СОЖ титульный лист.pdf" target="_blank" class="achievements-list__element slider__link  block-center direction">
+                    <img class="achievements-list__image slider__image" src="images/photos/ТУ СОЖ титульный лист-1.png" alt="Certificate">Технические условия
+                </a>                
+            </div>            
+
+            <div class="slider__controls block-center">
+                <label for="slider-achievements-1" class="slider__controls-element"></label>
+                <label for="slider-achievements-2" class="slider__controls-element"></label>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-me observer-section" id="about-company">
+      <h2 class="second-title">О компании</h2>
+      <div class="row">
+          <div class="left">
+              <img src="images/photos/Screenshot 2024-03-06 144115.png" alt="Моя фотография" class="about-me__image" />
+          </div>
+          <div class="right">
+              <h2 class="about-me__title">АрсмарисГрупп</h2>
+              <p class="about-me__description">Поставщик технологических жидкостей для смазки и охлаждения в Беларуси, специализирующийся на обработке металлов методами резания и давления. Наша компания обеспечивает высококачественные продукты и инновационные решения для различных отраслей промышленности, включая машиностроение, энергетику и другие.</p>
+
+              <p class="about-me__description">Мы стремимся быть лидерами в индустрии технологических жидкостей, предлагая клиентам продукты, которые обеспечивают оптимальную производительность, эффективность и безопасность в процессе обработки металлов. Наша философия основана на инновациях, качестве и устойчивом развитии, при этом мы придерживаемся высочайших стандартов производства.</p>
+              <p class="about-me__description">Мы предлагаем ассортимент смазочно-охлаждающих жидкостей и эмульгаторов. Наши продукты разработаны с использованием передовых технологий и соответствуют самым строгим отраслевым стандартам. Кроме того, мы предоставляем консультационные услуги и поддержку нашим клиентам, помогая им выбирать оптимальные решения для их конкретных потребностей.</p>
+              <p class="about-me__description">Наша компания ценит инновации, качество, надежность и партнерство. Мы стремимся к постоянному улучшению наших продуктов и услуг, чтобы удовлетворить потребности наших клиентов и превзойти их ожидания. Мы также придерживаемся принципов социальной ответственности, стремясь к устойчивому развитию и уменьшению негативного воздействия на окружающую среду.</p>
+              <p class="about-me__description">Наша миссия состоит в том, чтобы стать надежным партнером для наших клиентов, обеспечивая им инновационные и качественные решения в области технологических жидкостей. Мы стремимся быть впереди времени в разработке продуктов и услуг, способствуя успешному развитию наших клиентов и росту их бизнеса.</p>
+
+              <ul class="about-me__extra">
+                  <li class="about-me__extra-element">                        
+                      <div class="about-me__extra-content">
+                          <span class="about-me__extra-title bold">Полное наименование:</span>
+                          <span class="about-me__extra-description">Общество с ограниченной ответственностью «АрсмарисГрупп»</span>
+                      </div>
+                  </li>
+                  <li class="about-me__extra-element">                        
+                    <div class="about-me__extra-content">
+                        <span class="about-me__extra-title bold">Сокращенное наименование:</span>
+                        <span class="about-me__extra-description">«АрсмарисГрупп»</span>
+                    </div>
+                  </li>
+                  <li class="about-me__extra-element">                        
+                      <div class="about-me__extra-content">
+                          <span class="about-me__extra-title bold">Юридический адрес:</span>
+                          <span class="about-me__extra-description">220019, Республика Беларусь, г. Минск, ул. Лобанка, дом 79,
+                            помещение 22/5.</span>
+                      </div>
+                  </li>
+                  <li class="about-me__extra-element">                        
+                    <div class="about-me__extra-content">
+                        <span class="about-me__extra-title bold">Фактический адрес:</span>
+                        <span class="about-me__extra-description">220019, Республика Беларусь, г. Минск, ул. Лобанка, дом 79,
+                          помещение 22/5.</span>
+                    </div>
+                </li>
+                <li class="about-me__extra-element">                        
+                  <div class="about-me__extra-content">
+                      <span class="about-me__extra-title bold">УНП/ОКПО:</span>
+                      <span class="about-me__extra-description">192939188/500874955000</span>
+                  </div>
+                </li>
+                <li class="about-me__extra-element">                        
+                  <div class="about-me__extra-content">
+                      <span class="about-me__extra-title bold">р/с IBAN:</span>
+                      <span class="about-me__extra-description">BY65OLMP30120001094270000933
+                        ОАО «Белгазпромбанк» ЦБУ № 707, г. Минск, пр-т газеты «Звязда», 16</span>
+                  </div>
+                </li>
+                <li class="about-me__extra-element">                        
+                  <div class="about-me__extra-content">
+                      <span class="about-me__extra-title bold">БИК:</span>
+                      <span class="about-me__extra-description">OLMPBY2X</span>
+                  </div>
+                </li>
+                <li class="about-me__extra-element">                        
+                  <div class="about-me__extra-content">
+                      <span class="about-me__extra-title bold">Дата регистрации в Торговом реестре:</span>
+                      <span class="about-me__extra-description">07.07.2017</span>
+                  </div>
+                </li>
+                <li class="about-me__extra-element">                        
+                  <div class="about-me__extra-content">
+                      <span class="about-me__extra-title bold">Директор:</span>
+                      <span class="about-me__extra-description">Щербик Александр Владимирович, на основании Устава</span>
+                  </div>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </section>
+
+  <section class="about-me section-grey  observer-section" id="contacts">
+    <h2 class="second-title">Контакты</h2>
+    <div class="row">
+        <div class="left">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.407555035205!2d27.426317476317152!3d53.88895973398601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbdae0c3d6dd1d%3A0x175ea97917573aa6!2z0YPQu9C40YbQsCDQm9C-0LHQsNC90LrQsCA3OSwg0JzQuNC90YHQuiwg0JzQuNC90YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCR0LXQu9Cw0YDRg9GB0Yw!5e0!3m2!1sru!2spl!4v1709686538947!5m2!1sru!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="right">            
+            <ul class="about-me__extra">
+                <li class="about-me__extra-element">                        
+                    <div class="about-me__extra-content">
+                        <span class="about-me__extra-title bold">Адрес:</span>
+                        <span class="about-me__extra-description">г. Минск, ул. Лобанка, дом 79,
+                          помещение 22/5.</span>
+                    </div>
+                </li>
+                <li class="about-me__extra-element">                        
+                  <div class="about-me__extra-content">
+                      <span class="about-me__extra-title bold">Почтовый адрес:</span>
+                      <span class="about-me__extra-description">220099, Республика Беларусь, г. Минск, пер. Трубный 1-й,
+                        дом 5</span>
+                  </div>
+                </li>
+                <li class="about-me__extra-element">                        
+                    <div class="about-me__extra-content">
+                        <span class="about-me__extra-title bold">Телефон:</span>
+                        <span class="about-me__extra-description"><a href="tel:80296555540">+375(29)6555540</a></span>
+                    </div>
+                </li>
+                <li class="about-me__extra-element">                        
+                  <div class="contacts_email">
+                      <span class="about-me__extra-title bold">email:</span>
+                      <span class="about-me__extra-description emails"><a href="mailto:snk-007@yandex.by">snk-007@yandex.by</a><br><a href="mailto:arsmaris@tut.by">arsmaris@tut.by</a></span>
+                  </div>
+              </li>
+              <li class="about-me__extra-element">                        
+                <div class="about-me__extra-content">
+                    <span class="about-me__extra-title bold">Режим работы:</span>
+                    <span class="about-me__extra-description">Пн.-Пт., 09:00-21:00 </span>
+                </div>
+              </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <p class="footer-about">
+            &copy;&nbsp;АрсмарисГрупп 2017&nbsp;-&nbsp;2024
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
