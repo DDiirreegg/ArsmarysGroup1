@@ -154,7 +154,7 @@ a:hover {
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  padding: 60px 60px 60px;
+  padding: 80px 60px 60px;
 }
 
 .about-me .row {
@@ -165,7 +165,7 @@ a:hover {
 
 .about-me .left {
   flex: 1 1 60%;
-  margin-left: 5rem;
+  margin-left: 1rem;
   margin-right: 5rem;
 }
 .about-me .right {
@@ -208,7 +208,7 @@ ul.about-me__extra {
 .achievements {
   flex-direction: column;
   position: relative;
-  padding: 40px 0 80px;
+  padding: 80px 0 80px;
 }
 .achievements:before,
 .achievements:after {
@@ -443,10 +443,16 @@ a.link:hover {
   .about-me__description, ul.about-me__extra {
       font-size: 16px;
   }
+  .products {
+    width: 20rem;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
   /* Menu */
+  .products {
+    width: 20rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -644,6 +650,7 @@ img {
   cursor:default;
   background-color: #e9e9e9;
   border-radius: 10px;  
+  width: 37rem;
 }
 
 .additional-info h2{
@@ -674,7 +681,7 @@ img {
   display: flex;
   flex-direction: column;
   height: 3rem;
-  width: 25rem;
+  width: 35rem;
   border-radius: 10px;
   background-color: #e9e9e9;
   margin-bottom: 1rem;
@@ -724,7 +731,9 @@ img {
 .algoritm__wybor{
   font-size: 16px;
   font-weight: bold;
-  color: red
+  color: red;
+  text-align: center;
+  
 }
 
 table {
@@ -821,4 +830,51 @@ th {
 
 .rashifrofka__info {
   padding-left: 10px;
+}
+
+.super_table{
+  position: sticky;
+  top: 0;
+  left: 50%;
+  height: 80vh;
+  width: 90vw;
+}
+
+.overfall{
+  overflow-x: scroll;
+}
+
+.rashifrofka_abriav {
+  font-size: 12px;
+}
+
+.red__flag {
+  color: red;
+  font-weight: 900;
+  font-size: 110%;
+}
+
+.products__right {
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #d4d0d0;
+  border-radius: 10px;
+}
+
+.greann {
+  border-top: 8px solid rgb(0, 0, 0);
+}
+
+.material-symbols-outlined {
+  color: blueviolet;
+}
+
+.close_btn {
+  color: black;
+}
+
+.span__close_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
