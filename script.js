@@ -1,6 +1,9 @@
 // function toggleDescription(element) {
 //   document.getElementById(element).classList.toggle('show-info');
 // }
+window.onload = function() {
+  window.scrollTo(0, 0); 
+}
 
 
 function toggleAdditionalInfo(index) {

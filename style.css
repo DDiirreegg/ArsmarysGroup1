@@ -31,8 +31,10 @@
 }
 
 *{  
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
+  font-weight: lighter;
+  
 }
 
 a {
@@ -746,6 +748,8 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
 }
 ul {
     list-style: none;
@@ -778,6 +782,7 @@ img {
   cursor:default;
   background-color: #e9e9e9;
   border-radius: 10px;
+  border: 1px solid black;
 }
 
 .additional-info__test {
@@ -787,6 +792,9 @@ img {
   margin-bottom: 0;
   margin-left: 5rem;
   margin-right: 5rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 7px;
 }
 
 .additional-info h2{
@@ -794,6 +802,10 @@ img {
   margin-block-end: 0.83em;
   margin-inline-start: 10px;
   margin-inline-end: 5px;
+}
+
+.additional-infoo {
+  margin-top: .3em;  
 }
 
 .priemushch {
@@ -989,10 +1001,19 @@ th {
 }
 
 .products__right {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: bold;
   background-color: #d4d0d0;
-  border-radius: 10px;
+  border-radius: 6px;
+  padding: 3px;
+  margin-inline-start: 10px;
+  margin-inline-end: 5px;
+  margin-top: 2em;
+}
+
+.thife__menu {
+  font-size: 15px;
+  margin-top: .3em;
 }
 
 .greann {
@@ -1033,8 +1054,9 @@ th {
 .px__img {
   display: block; /* Делаем изображение блочным элементом */
   margin: 0 auto; /* Устанавливаем автоматические отступы по горизонтали, чтобы изображение было посередине */
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
+  margin-bottom: 2em;
 }
 
 .spisok__tit {
@@ -1044,7 +1066,7 @@ th {
 .m__B__S {
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
-  margin-inline-start: 10px;
+  margin-inline-start: 0px;
   margin-inline-end: 5px;
   font-weight: lighter;
   font-size: 14px;
