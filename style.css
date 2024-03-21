@@ -161,6 +161,7 @@ a:hover {
 
 .about-me .row1 {
   display: flex;
+  /* flex-direction: row; */
   width: 100%;
   gap: 60px;
 }
@@ -186,6 +187,8 @@ a:hover {
 }
 
 .about-me__title {
+  text-align: center;
+  margin-bottom: .8em;
   font-size: 36px;
 }
 
@@ -235,6 +238,7 @@ ul.about-me__extra {
   flex-direction: column;
   align-items: center;
   padding: 20px 0;
+  background-color: rgb(243, 242, 242);
 }
 
 .footer-about {
@@ -281,26 +285,45 @@ a.link:hover {
   font-size: 28px;
   text-align: center;
   margin-bottom: 40px;
+  display: inline-flex; /* Изменено на inline-flex */
+  align-items: center; /* Выравниваем элементы по центру по вертикали */
 }
+
 .second-title:after {
   --underline-width: 60px;
-
   content: "";
-
   display: inline-block;
   width: var(--underline-width);
   height: 2px;
-
   position: absolute;
   bottom: -7px;
   left: calc(50% - var(--underline-width) / 2);
-
   background: var(--color-green);
 }
 
-.section-grey {
-  background: var(--background-grey);
+.second-title img {
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
 }
+
+
+.container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 20px; /* Добавляем промежуток между блоками */
+}
+
+.text {
+  padding: 20px; /* Добавляем отступ вокруг текста */
+  
+}
+
+.image {
+  background-size: cover;
+  background-position: center;
+}
+
 
 /* Слайдер изображений */
 .slider {
@@ -373,12 +396,21 @@ a.link:hover {
   .logo {
       font-size: 32px;
   }
+  .row1 {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   /* Menu */
   .logo {
       font-size: 28px;
+  }
+
+  .row1 {
+    flex-direction: row;
+    align-items: center;
   }
 
   .menu-element {
@@ -419,6 +451,10 @@ a.link:hover {
       /* Work vars */
       --work-wrapper: 700px;
       --work-element: 300px;
+  }
+  .row1 {
+    flex-direction: column;
+    align-items: center;
   }
 
   /* Menu */
@@ -538,6 +574,11 @@ a.link:hover {
       width: 150px;
   }
 
+  .row1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .switcher-wrapper {
       width: 100px;
   }
@@ -576,6 +617,11 @@ a.link:hover {
       width: 32px;
 
       z-index: 4;
+  }
+
+  .row1 {
+    flex-direction: column;
+    align-items: center;
   }
 
   .line {
@@ -916,16 +962,17 @@ td {
   text-align: center;
 }
 
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
 
+tr{
+  width: 60px;
+}
 tr:hover {
   background-color: #ddd;
 }
 
 th {
   position: relative;
+  height: 120px;
 }
 
 .material {
@@ -1125,4 +1172,55 @@ th {
   margin-block-end: 0.83em;
   margin-inline-start: 10px;
   margin-inline-end: 5px;
+}
+
+.polosa {
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+
+.footer__links {
+  font-size: 8px;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  margin-left: 15px;
+}
+
+.left-div {
+  display: flex;
+  align-items: center; /* Центрируем содержимое по вертикали */
+  justify-content: center; /* Центрируем содержимое по горизонтали */
+}
+.right-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем содержимое по вертикали */
+  justify-content: center;
+  /* align-self: flex-end; */
+  margin-left: 1em;
+}
+
+.bottom-div {
+  margin-top: 20px;
+  grid-column: 1 / span 2;
+  align-items: center;
+}
+
+.img__about {
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+  width: 90%;
+  height: 90%;
+}
+
+.margin__about{
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 1em;
 }
