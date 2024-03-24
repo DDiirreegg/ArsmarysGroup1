@@ -156,7 +156,7 @@ a:hover {
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  padding: 80px 60px 60px;
+  padding: 80px 160px 60px;
 }
 
 .about-me .row1 {
@@ -400,6 +400,7 @@ a.link:hover {
     flex-direction: row;
     align-items: center;
   }
+  
 }
 
 @media screen and (max-width: 1200px) {
@@ -411,7 +412,7 @@ a.link:hover {
   .row1 {
     flex-direction: row;
     align-items: center;
-  }
+  }  
 
   .menu-element {
       font-size: 18px;
@@ -455,6 +456,14 @@ a.link:hover {
   .row1 {
     flex-direction: column;
     align-items: center;
+  }
+  /* .left-div {
+    display: none !important;
+  } */
+
+  .container1 {
+    display: flex !important;
+    flex-direction: column;
   }
 
   /* Menu */
@@ -578,6 +587,10 @@ a.link:hover {
     flex-direction: column;
     align-items: center;
   }
+  .container1 {
+    display: flex !important;
+    flex-direction: column;
+  }
 
   .switcher-wrapper {
       width: 100px;
@@ -622,6 +635,11 @@ a.link:hover {
   .row1 {
     flex-direction: column;
     align-items: center;
+  }
+
+  .container1 {
+    display: flex !important;
+    flex-direction: column;
   }
 
   .line {
@@ -1195,6 +1213,7 @@ th {
   display: flex;
   align-items: center; /* Центрируем содержимое по вертикали */
   justify-content: center; /* Центрируем содержимое по горизонтали */
+  margin-right: 1em;
 }
 .right-div{
   display: flex;
@@ -1202,7 +1221,7 @@ th {
   align-items: center; /* Центрируем содержимое по вертикали */
   justify-content: center;
   /* align-self: flex-end; */
-  margin-left: 1em;
+  /* margin-left: 1em; */
 }
 
 .bottom-div {
@@ -1215,8 +1234,8 @@ th {
   background-size: cover;
   background-position: center;
   border-radius: 50px;
-  width: 90%;
-  height: 90%;
+  /* width: 90%;
+  height: 90%; */
 }
 
 .margin__about{
@@ -1224,3 +1243,4 @@ th {
   border-radius: 15px;
   padding: 1em;
 }
+
