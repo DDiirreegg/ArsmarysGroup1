@@ -458,9 +458,9 @@ a.link:hover {
     flex-direction: column;
     align-items: center;
   }
-  /* .left-div {
+  .mobi__none {
     display: none !important;
-  } */
+  }
 
   .container1 {
     display: flex !important;
@@ -593,6 +593,10 @@ a.link:hover {
     flex-direction: column;
   }
 
+  .mobi__none {
+    display: none !important;
+  }
+
   .switcher-wrapper {
       width: 100px;
   }
@@ -643,6 +647,10 @@ a.link:hover {
     flex-direction: column;
   }
 
+  .mobi__none {
+    display: none !important;
+  }
+  
   .line {
       display: block;
       height: 4px;
