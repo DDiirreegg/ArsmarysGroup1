@@ -321,8 +321,12 @@ a.link:hover {
 }
 
 .text {
-  padding: 20px; /* Добавляем отступ вокруг текста */
-  
+  padding-left: 20px; 
+  /* padding-right: 20px; */
+}
+
+.plus_SOZ {
+  margin-top: -1em !important
 }
 
 .image {
@@ -858,9 +862,9 @@ img {
   margin-bottom: 3rem;
   transition: opacity .5s ease; 
   cursor:default;
-  background-color: #f1f1f1;
+  background-color: #f6f6f6;
   border-radius: 10px;
-  border: 1px solid black;
+  border: .5px solid black;
 }
 
 .additional-info__test {
@@ -977,6 +981,8 @@ img {
 }
 
 table {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   border-collapse: collapse;
   margin-bottom: 20px;
   font-size: 13px;
@@ -987,10 +993,11 @@ table {
 th {
   background-color: #f2f2f2;
   font-weight: bold;
+  border: 1px solid black;
 }
 
 td {
-  border-bottom: 1px solid #ddd;
+  border: 1px solid black;
   text-align: center;
   
 }
@@ -1134,7 +1141,11 @@ th {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: .7em;
+    margin-bottom: .3em;    
 }
+
+
 
 .arrow__up {
   color: #1d1a1a;
