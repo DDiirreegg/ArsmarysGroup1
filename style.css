@@ -195,7 +195,7 @@ a:hover {
 .about-me__description {
   font-size: 20px;
   color: var(--color-text);
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 ul.about-me__extra {
@@ -325,9 +325,6 @@ a.link:hover {
   /* padding-right: 20px; */
 }
 
-.plus_SOZ {
-  margin-top: -1em !important
-}
 
 .image {
   background-size: cover;
@@ -476,6 +473,10 @@ a.link:hover {
     flex-direction: column;
   }
 
+  .passport__border__pas {
+    font-size: 15px !important;
+  }
+
   /* Menu */
   .logo {
       font-size: 24px;
@@ -602,6 +603,10 @@ a.link:hover {
     flex-direction: column;
   }
 
+  .passport__border__pas {
+    font-size: 14px !important;
+  }
+
   .mobi__none {
     display: none !important;
   }
@@ -646,6 +651,20 @@ a.link:hover {
       z-index: 4;
   }
 
+  .products:hover h2 {
+    font-size: 17px !important;
+    color: #000 !important;
+   }
+
+   a:hover {
+    color: #a9a9a9;
+  }
+
+  .about-me__description a:hover {
+    font-size: 20px;
+    color: red;
+  }
+
   .row1 {
     flex-direction: column;
     align-items: center;
@@ -654,6 +673,10 @@ a.link:hover {
   .container1 {
     display: flex !important;
     flex-direction: column;
+  }
+
+  .passport__border__pas {
+    font-size: 14px !important;
   }
 
   .mobi__none {
@@ -864,7 +887,7 @@ img {
   cursor:default;
   background-color: #f6f6f6;
   border-radius: 10px;
-  border: .5px solid black;
+  border: 1px solid black;
 }
 
 .additional-info__test {
@@ -911,12 +934,12 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 15px;
+  margin-left: .1em;
   
 }
 
 .passport__border__pas {
-  font-size: 17px;  
+  font-size: 16px;  
   border-bottom: 1px solid red;
 }
 
@@ -1067,9 +1090,10 @@ th {
 }
 
 .argunitPX {
-  color: rgb(113, 108, 108);
+  color: red;
   border-bottom: 2px solid red;
   cursor: pointer;
+  font-size: 20px;
 }
  
 .argunitPX:hover {
